@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="style.css" rel="stylesheet">
+    <!--<script src="app.js" type="text/javascript"></script>-->
+    
+    <title>To Do App</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 inputForm">
+                <h2 class="text-center"> Create your task </h2>
+                <!--Input form -->
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="inputName">
+                        <p id="demo"></p>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="description">Description:</label>
+                        <input type="text" class="form-control" id="inputDescription">
+                        <p id="demo1"></p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="assignment">Assigned To:</label>
+                      <input type="text" class="form-control" id="inputAssignment">
+                      <p id="demo2"></p>
+                    </div>
+                    <div class="form-group ">
+                      <label for="dueDate">Due Date:</label>
+                      <input type="date" class="form-control" id="dueDate">
+                      <p id="demo3"></p>
+                    </div>
+                    
+                    <div class="form-group ">
+                        <label for="inputStatus">Status:</label>
+                        <select id="inputStatus" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>TO DO</option>
+                          <option>IN PROGRESS</option>
+                          <option>REVIEW</option>
+                          <option>DONE</option>
+                          <p id="demo4"></p>
+                        </select>
+                    </div>
+                    <button id = "myBtn"  type="button" class="btn btn-primary">Create</button>
+                </form>
+                <hr>
+                <h2 class="text-center">Your List Of Tasks:</h2>
+                <div class="list-group" id="list-group">
+                    
+                    
+                    <!--<div class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Name of the task</h5>
+                        <small class="text-muted">Due Date</small>
+                      </div>
+                      <p class="mb-1">Description of the task.</p>
+                      <p class="mb-1">Assigned to:</p>
+                      <small class="text-muted">Status:</small>
+                    </div>-->
+
+                    
+                </div>
+                
+            </div>
+            
+            <div class="col-sm-9 cards">
+                <h1 class="text-center"> Your  tasks </h1>
+                <div class="row">
+                    <div class="card-deck" id="list-items">
+                
+                        
+
+                        <!--<div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    Your Task 2
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Name</li>
+
+                                    <li class="list-group-item">Description</li>
+                                  
+                                    <li class="list-group-item">Assigned To</li>
+                               
+                                    <li class="list-group-item">Due Date</li>
+                                 
+                                    <li class="list-group-item">Status</li>
+                                    
+                                </ul>
+                            </div>
+                        
+                        </div>-->
+                        
+                                  
+                                   
+
+                    </div>     
+                </div>
+                
+            </div>
+          
+        </div>
+    </div>
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="app.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
